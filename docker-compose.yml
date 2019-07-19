@@ -8,6 +8,7 @@ services:
     restart: unless-stopped
     volumes:
       - data:/unifi
+      - data:/var/run/unifi
     environment:
       RUNAS_UID0: "false"
       TZ: "America/New_York"
