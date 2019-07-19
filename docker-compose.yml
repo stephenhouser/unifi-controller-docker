@@ -1,9 +1,9 @@
 version: '2'
 services:
-  controller:
+  unifi:
     image: jacobalberty/unifi:latest
-    container_name: unifi
-#    init: true
+    #container_name: unifi
+    #init: true
     network_mode: host
     restart: unless-stopped
     volumes:
